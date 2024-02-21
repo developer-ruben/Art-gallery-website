@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Modern Art Gallery" />
+    <meta name="keywords" content="modern,art,gallery" />
+    <meta name="author" content="Ruben de Man" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Art gallery website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="map-section">
+        <picture class="map-section__image">
+          <source
+            srcset="
+              ./assets/mobile/image-map.png    1x,
+              ./assets/mobile/image-map@2x.png 2x
+            "
+            media="(max-width: 375px)"
+          />
+          <source
+            srcset="
+              ./assets/tablet/image-map.png    1x,
+              ./assets/tablet/image-map@2x.png 2x
+            "
+            media="(max-width: 768px)"
+          />
+          <source
+            srcset="
+              ./assets/desktop/image-map.png    1x,
+              ./assets/desktop/image-map@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            alt="Map"
+            src="./assets/desktop/image-map.png"
+            width="1440"
+            height="600"
+          />
+        </picture>
+        <div class="container">
+          <a href="./index.html" class="button button--back">Back to Home</a>
+        </div>
+      </section>
+
+      <section class="location-section">
+        <div class="container">
+          <h1 class="location-section__title">Our location</h1>
+          <div class="location-section__body">
+            <span class="location-section__street">99 King Street</span>
+            <p class="location-section__address">
+              Newport <br />
+              RI 02840 <br />
+              United States of America
+            </p>
+            <p>
+              United States of America Our newly opened gallery is located near
+              the Edward King House on 99 King Street, the Modern Art Gallery is
+              free to all visitors and open seven days a week from 8am to 9pm.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer--gold">
+      <div class="container">
+        <img
+          class="footer__branding"
+          src="./assets/logo-dark.svg"
+          alt=""
+          width="111"
+          height="40"
+        />
+        <p class="footer__text">
+          The Modern Art Gallery is free to all visitors and open seven days a
+          week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#"
+              ><img
+                class="footer__icon"
+                src="./assets/icon-facebook.svg"
+                alt=""
+                width="20"
+                height="20"
+            /></a>
+          </li>
+          <li class="footer__item">
+            <a href="#"
+              ><img
+                class="footer__icon"
+                src="./assets/icon-instagram.svg"
+                alt=""
+                width="20"
+                height="20"
+            /></a>
+          </li>
+          <li class="footer__item">
+            <a href="#"
+              ><img
+                class="footer__icon"
+                src="./assets/icon-twitter.svg"
+                alt=""
+                width="20"
+                height="17"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
